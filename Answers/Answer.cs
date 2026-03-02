@@ -51,6 +51,11 @@ namespace C__Project.Answers
 			return false;
 		}
 
+		public override int GetHashCode()
+		{
+			return HashCode.Combine(Id, Text);
+		}
+		
 		public int CompareTo(Answer? other)
 		{
 			if (other == null)

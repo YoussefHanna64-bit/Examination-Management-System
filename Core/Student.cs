@@ -55,6 +55,11 @@ namespace C__Project.Core
 			return false;
 		}
 
+		public override int GetHashCode()
+		{
+			return HashCode.Combine(Id, Name);
+		}
+		
 		public override string ToString()
 		{
 			return $"Student Id: {Id}, Name: {Name}";

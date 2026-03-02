@@ -180,6 +180,11 @@ namespace C__Project.Exams
 			return false;
 		}
 
+		public override int GetHashCode()
+		{
+			return HashCode.Combine(Time, NumberOfQuestions, Subject);
+		}
+		
 		public override string ToString()
 		{
 			return $"Exam: Subject: {Subject.Name}, Time: {Time} min, Questions: {NumberOfQuestions}, Mode: {Mode}";

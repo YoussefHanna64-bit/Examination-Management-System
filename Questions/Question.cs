@@ -107,6 +107,11 @@ namespace C__Project.Questions
 			return false;
 		}
 
+		public override int GetHashCode()
+		{
+			return HashCode.Combine(Header, Body, Marks, CorrectAnswer);
+		}
+		
 		public override string ToString()
 		{
 			return $"Header: {Header}, Body: {Body}, Marks: {Marks}, Correct Answer: {GetCorrectAnswerDisplay()}";

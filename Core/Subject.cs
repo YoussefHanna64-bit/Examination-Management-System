@@ -52,6 +52,11 @@ namespace C__Project.Core
 			return false;
 		}
 
+		public override int GetHashCode()
+		{
+			return HashCode.Combine(Name);
+		}
+		
 		public override string ToString()
 		{
 			return $"Subject Name: {Name}, Students: {_students.Count}]";

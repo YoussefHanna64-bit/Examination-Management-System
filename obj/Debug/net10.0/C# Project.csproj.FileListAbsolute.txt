@@ -12,3 +12,4 @@ E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Proje
 E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.pdb
 E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.genruntimeconfig.cache
 E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\ref\C# Project.dll
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.sourcelink.json

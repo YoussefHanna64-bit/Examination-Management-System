@@ -9,7 +9,7 @@ namespace C__Project.Core
 		private List<Student> _students = new List<Student>();
 
 		public string Name { get; }
-		public Student[] EnrolledStudents => _students.ToArray();
+		public List<Student> EnrolledStudents => new List<Student>(_students);
 
 		public Subject(string name)
 		{
@@ -56,7 +56,7 @@ namespace C__Project.Core
 		{
 			return HashCode.Combine(Name);
 		}
-		
+
 		public override string ToString()
 		{
 			return $"Subject Name: {Name}, Students: {_students.Count}]";

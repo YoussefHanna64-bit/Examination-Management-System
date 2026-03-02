@@ -41,7 +41,7 @@ namespace C__Project.Exams
 
 				totalPossible += q.Marks;
 
-				Answer? studentAnswer = QuestionAnswerDictionary[q];
+				QuestionAnswerDictionary.TryGetValue(q, out Answer? studentAnswer);
 				bool correct = studentAnswer is not null && q.CheckAnswer(studentAnswer);
 
 				Console.WriteLine("");

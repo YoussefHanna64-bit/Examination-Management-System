@@ -6,8 +6,9 @@ namespace C__Project.Answers
 {
 	public class AnswerList
 	{
-		private Answer[] _answers;
-		private int _count;
+		//private Answer[] _answers;
+		//private int _count;
+        private List<Answer> _answers;
 
 		public AnswerList(int capacity = 10)
 		{
@@ -16,8 +17,10 @@ namespace C__Project.Answers
 				throw new ArgumentException("Capacity must be positive");
 			}
 
-			_answers = new Answer[capacity];
-			_count = 0;
+			//_answers = new Answer[capacity];
+			//_count = 0;
+
+			_answers = new List<Answer>(capacity);
 		}
 
 		public void Add(Answer answer)
@@ -27,12 +30,14 @@ namespace C__Project.Answers
 				throw new ArgumentNullException("Answer cannot be null");
 			}
 
-			if (_count >= _answers.Length)
-			{
-				Array.Resize(ref _answers, _answers.Length * 2);
-			}
+			// if (_count >= _answers.Length)
+			// {
+			// 	Array.Resize(ref _answers, _answers.Length * 2);
+			// }
 
-			_answers[_count++] = answer;
+			// _answers[_count++] = answer;
+
+			 _answers.Add(answer);
 		}
 
 		public bool Contains(Answer answer)
@@ -42,7 +47,7 @@ namespace C__Project.Answers
 				return false;
 			}
 
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < _answers.Count; i++)
 			{
 				if (_answers[i].Equals(answer))
 				{
@@ -55,7 +60,7 @@ namespace C__Project.Answers
 
 		public Answer? GetById(int id)
 		{
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < _answers.Count; i++)
 			{
 				if (_answers[i].Id == id)
 				{
@@ -70,18 +75,18 @@ namespace C__Project.Answers
 		{
 			get
 			{
-				if (index < 0 || index >= _count)
+				if (index < 0 || index >= _answers.Count)
 				{
-					throw new IndexOutOfRangeException($"Index {index} is out of range AnswerList has {_count} ans");
+					throw new IndexOutOfRangeException($"Index {index} is out of range AnswerList has {_answers.Count} ans");
 				}
 
 				return _answers[index];
 			}
 			set
 			{
-				if (index < 0 || index >= _count)
+				if (index < 0 || index >= _answers.Count)
 				{
-					throw new IndexOutOfRangeException($"Index {index} is out of range AnswerList has {_count} ans");
+					throw new IndexOutOfRangeException($"Index {index} is out of range AnswerList has {_answers.Count} ans");
 				}
 
 				_answers[index] = value ?? throw new ArgumentNullException("Answer cannot be null.");
@@ -92,7 +97,7 @@ namespace C__Project.Answers
 		{
 			get
 			{
-				return _count;
+				return _answers.Count;
 			}
 		}
 	}

@@ -41,7 +41,8 @@ namespace C__Project.Exams
 			}
 		}
 
-		protected Question[] Questions { get; set; }
+		//protected Question[] Questions { get; set; }
+		protected List<Question> Questions { get; set; }
 		protected Dictionary<Question, Answer?> QuestionAnswerDictionary { get; set; }
 		public Subject Subject { get; protected set; }
 		public ExamMode Mode { get; protected set; }
@@ -51,7 +52,8 @@ namespace C__Project.Exams
 			Time = time;
 			NumberOfQuestions = numberOfQuestions;
 			Subject = subject ?? throw new ArgumentNullException("Subject cannot be null");
-			Questions = new Question[numberOfQuestions];
+			//Questions = new Question[numberOfQuestions];
+			Questions = new List<Question>(numberOfQuestions);
 			QuestionAnswerDictionary = new Dictionary<Question, Answer?>();
 			Mode = ExamMode.Queued;
 		}
@@ -130,9 +132,13 @@ namespace C__Project.Exams
 		public void LoadQuestions(QuestionList questionList)
 		{
 			int count = Math.Min(questionList.Count, NumberOfQuestions);
+
+			Questions.Clear();
+			
 			for (int i = 0; i < count; i++)
 			{
-				Questions[i] = questionList[i];
+				//Questions[i] = questionList[i];
+				Questions.Add(questionList[i]);
 			}
 		}
 

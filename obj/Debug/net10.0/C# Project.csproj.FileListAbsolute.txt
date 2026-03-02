@@ -1,0 +1,14 @@
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\bin\Debug\net10.0\C# Project.exe
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\bin\Debug\net10.0\C# Project.deps.json
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\bin\Debug\net10.0\C# Project.runtimeconfig.json
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\bin\Debug\net10.0\C# Project.dll
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\bin\Debug\net10.0\C# Project.pdb
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.GeneratedMSBuildEditorConfig.editorconfig
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.AssemblyInfoInputs.cache
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.AssemblyInfo.cs
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.csproj.CoreCompileInputs.cache
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.dll
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\refint\C# Project.dll
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.pdb
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\C# Project.genruntimeconfig.cache
+E:\C\ITI\Mobile Applications Development (Cross Platform)\C#\C# Project\C# Project\obj\Debug\net10.0\ref\C# Project.dll

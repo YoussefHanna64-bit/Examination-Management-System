@@ -4,6 +4,7 @@ using System.Text;
 using C__Project.Answers;
 using C__Project.Core;
 using C__Project.Enum;
+using C__Project.Events;
 using C__Project.Questions;
 
 namespace C__Project.Exams
@@ -47,6 +48,7 @@ namespace C__Project.Exams
 		public Subject Subject { get; protected set; }
 		public ExamMode Mode { get; protected set; }
 
+		public event ExamStartedHandler ExamStarted;
 		protected Exam(int time, int numberOfQuestions, Subject subject)
 		{
 			Time = time;
@@ -63,10 +65,16 @@ namespace C__Project.Exams
 		{
 			Mode = ExamMode.Starting;
 			Console.Clear();
-			string message = $"Exam is starting - Subject: {Subject.Name} - Duration: {Time} min";
-			Subject.NotifyStudents(message);
+			Subject.NotifyStudents();
 
-            Console.WriteLine("");
+			foreach (var std in Subject.EnrolledStudents)
+			{
+				ExamStarted += std.OnExamStarted;
+			}
+
+			ExamStarted?.Invoke(this, new ExamEventArgs(Subject, this));
+
+			Console.WriteLine("");
 			Console.WriteLine("Press any key to start the exam");
 			Console.ReadKey();
 		}
@@ -105,18 +113,18 @@ namespace C__Project.Exams
 				studentAnswer = question.ParseStudentInput(input);
 
 				if (studentAnswer is null)
-                {
-                    Console.Write("Invalid choice. Try again: ");
-                }	
+				{
+					Console.Write("Invalid choice. Try again: ");
+				}
 
 			} while (studentAnswer is null);
 
 			return studentAnswer;
 		}
 
-        protected void PrintQuestions()
-        {
-            foreach (Question q in Questions)
+		protected void PrintQuestions()
+		{
+			foreach (Question q in Questions)
 			{
 				if (q is null)
 				{
@@ -127,14 +135,14 @@ namespace C__Project.Exams
 				Answer? studentAnswer = GetStudentAnswer(q);
 				QuestionAnswerDictionary[q] = studentAnswer;
 			}
-        }
+		}
 
 		public void LoadQuestions(QuestionList questionList)
 		{
 			int count = Math.Min(questionList.Count, NumberOfQuestions);
 
 			Questions.Clear();
-			
+
 			for (int i = 0; i < count; i++)
 			{
 				//Questions[i] = questionList[i];
@@ -145,7 +153,7 @@ namespace C__Project.Exams
 		protected void PersistToFile(string content)
 		{
 			string fileName = $"{Subject.Name}_Results.txt";
-            
+
 			try
 			{
 				using StreamWriter writer = new StreamWriter(fileName, append: true);
@@ -190,7 +198,7 @@ namespace C__Project.Exams
 		{
 			return HashCode.Combine(Time, NumberOfQuestions, Subject);
 		}
-		
+
 		public override string ToString()
 		{
 			return $"Exam: Subject: {Subject.Name}, Time: {Time} min, Questions: {NumberOfQuestions}, Mode: {Mode}";

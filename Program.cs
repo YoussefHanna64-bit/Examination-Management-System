@@ -85,17 +85,9 @@ namespace C__Project
 				marks: 5,
 				correctAnswer: true));
 
-			PracticeExam practiceExam;
-			FinalExam finalExam;
-
 			string? again;
 			do
 			{
-				practiceExam = new PracticeExam(time: 30, numberOfQuestions: 3, subject);
-				finalExam = new FinalExam(time: 60, numberOfQuestions: 2, subject);
-				practiceExam.LoadQuestions(practiceQuestions);
-				finalExam.LoadQuestions(finalQuestions);
-
 				Console.WriteLine();
 				Console.WriteLine("==============================");
 				Console.WriteLine("Select Exam Type:");
@@ -116,7 +108,20 @@ namespace C__Project
 
 				} while (choice != "1" && choice != "2");
 
-				Exam selectedExam = choice == "1" ? practiceExam : finalExam;
+				Exam selectedExam;
+
+				if (choice == "1")
+				{
+					PracticeExam practiceExam = new PracticeExam(time: 30, numberOfQuestions: 3, subject);
+					practiceExam.LoadQuestions(practiceQuestions);
+					selectedExam = practiceExam;
+				}
+				else
+				{
+					FinalExam finalExam = new FinalExam(time: 60, numberOfQuestions: 2, subject);
+					finalExam.LoadQuestions(finalQuestions);
+					selectedExam = finalExam;
+				}
 
 				selectedExam.Start();
 				selectedExam.ShowExam();
@@ -133,6 +138,6 @@ namespace C__Project
 			Console.ReadKey();
 		}
 
-		
+
 	}
 }

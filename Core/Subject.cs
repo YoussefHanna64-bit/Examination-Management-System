@@ -31,16 +31,9 @@ namespace C__Project.Core
 			_students.Add(student);
 		}
 
-		public void NotifyStudents(string message)
+		public void NotifyStudents()
 		{
 			Console.WriteLine($"Notifying students");
-			Console.WriteLine($"{message}");
-
-			foreach (Student s in _students)
-			{
-				s.OnExamStarted(message);
-			}
-
 		}
 
 		public override bool Equals(object? obj)

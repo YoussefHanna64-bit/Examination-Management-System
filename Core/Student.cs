@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using C__Project.Events;
 
 namespace C__Project.Core
 {
@@ -41,9 +42,9 @@ namespace C__Project.Core
 			Name = name;
 		}
 
-		public void OnExamStarted(string message)
+		public void OnExamStarted(object sender, ExamEventArgs e)
 		{
-			Console.WriteLine($"{Name} is notified");
+			Console.WriteLine($"{Name} is notified that the exam for {e.Subject.Name} has started");
 		}
 
 		public override bool Equals(object? obj)

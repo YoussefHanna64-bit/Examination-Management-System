@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="1876" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -8,70 +8,90 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5d2195bd80daf111-5" parent="1" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" value="PracticeExam  " vertex="1">
-          <mxGeometry height="120" width="240" x="-325" y="550" as="geometry" />
+          <mxGeometry height="120" width="240" x="-234" y="889" as="geometry" />
         </mxCell>
         <mxCell id="5d2195bd80daf111-6" parent="5d2195bd80daf111-5" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+PracticeExam(time: int, numberOfQuestions: int, subject: Subject)&lt;br&gt;            +ShowExam(): void&lt;br&gt;            +Finish(): void&lt;br&gt;            +Clone(): object" vertex="1">
           <mxGeometry height="94" width="240" y="26" as="geometry" />
         </mxCell>
         <mxCell id="5d2195bd80daf111-19" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Enum&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;ExamMode&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Starting&lt;br&gt;Queued&lt;br&gt;Finished&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="95" width="80" x="-490" y="360" as="geometry" />
+          <mxGeometry height="95" width="80" x="-324" y="678" as="geometry" />
         </mxCell>
-        <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-13" edge="1" parent="1" source="5d2195bd80daf111-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="5d2195bd80daf111-19">
+        <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-13" edge="1" parent="1" source="5d2195bd80daf111-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="5d2195bd80daf111-19">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-325" y="340" />
-              <mxPoint x="-325" y="408" />
+              <mxPoint x="-180" y="600" />
+              <mxPoint x="-180" y="723" />
             </Array>
+            <mxPoint x="-310" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-17" edge="1" parent="1" source="5d2195bd80daf111-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="OLvOtJGtDJ0Bsc-RMxMk-16">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="35" y="120" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="5d2195bd80daf111-20" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;lt;abstract, ICloneable, IComparable&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Exam&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;     -int _time&lt;br&gt;-int _numberOfQuestions&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;#List&amp;lt;Question&amp;gt; Questions&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;#Dictionary&amp;lt;Question, Answer&amp;gt; QuestionAnswerDictionary&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+int Time&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+int NumberOfQuestions&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Subject Subject&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ExamMode Mode&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;#Exam(time: int, numberOfQuestions: int, subject: Subject)&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Start(): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Finish(): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+CorrectExam(): int&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ShowExam(): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;#GetStudentAnswer(question: Question): Answer?&lt;br&gt;            #PrintQuestions(): void&lt;br&gt;            +LoadQuestions(questionList: QuestionList): void&lt;br&gt;            #PersistToFile(content: string): void&lt;br&gt;            +Clone(): object&lt;br&gt;            +CompareTo(other: Exam?): int&lt;br&gt;            +Equals(obj: object?): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&lt;span class=&quot;hljs-title&quot;&gt;GetHashCode&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;): int&lt;br&gt;            +ToString(): string&lt;/p&gt;" vertex="1">
-          <mxGeometry height="400" width="330" x="-240" y="90" as="geometry" />
+        <mxCell id="_N4kI7smr2jnTIrs4zNd-6" edge="1" parent="1" source="5d2195bd80daf111-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_N4kI7smr2jnTIrs4zNd-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-160" y="523" />
+              <mxPoint x="-160" y="523" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5d2195bd80daf111-20" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;lt;abstract, ICloneable, IComparable&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Exam&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;     -int _time&lt;br&gt;-int _numberOfQuestions&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;#List&amp;lt;Question&amp;gt; Questions&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;#Dictionary&amp;lt;Question, Answer&amp;gt; QuestionAnswerDictionary&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+int Time&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+int NumberOfQuestions&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Subject Subject&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ExamMode Mode&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+event ExamStartedHandler&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ExamStarted&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;#Exam(time: int, numberOfQuestions: int, subject: Subject)&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Start(): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Finish(): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+CorrectExam(): int&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ShowExam(): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;#GetStudentAnswer(question: Question): Answer?&lt;br&gt;            #PrintQuestions(): void&lt;br&gt;            +LoadQuestions(questionList: QuestionList): void&lt;br&gt;            #PersistToFile(content: string): void&lt;br&gt;            +Clone(): object&lt;br&gt;            +CompareTo(other: Exam?): int&lt;br&gt;            +Equals(obj: object?): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&lt;span class=&quot;hljs-title&quot;&gt;GetHashCode&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;): int&lt;br&gt;            +ToString(): string&lt;/p&gt;" vertex="1">
+          <mxGeometry height="400" width="330" x="-130" y="240" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-12" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" target="5d2195bd80daf111-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-10" parent="1" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" value="FinalExam " vertex="1">
-          <mxGeometry height="120" width="240" x="-60" y="550" as="geometry" />
+          <mxGeometry height="120" width="240" x="31" y="889" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-11" parent="OLvOtJGtDJ0Bsc-RMxMk-10" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+FinalExam(time: int, numberOfQuestions: int, subject: Subject)&lt;br&gt;            +ShowExam(): void&lt;br&gt;            +Finish(): void&lt;br&gt;            +Clone(): object" vertex="1">
           <mxGeometry height="84" width="240" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-16" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;Subject&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-List&amp;lt;Student&amp;gt; _students&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+string Name&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+List&amp;lt;Student&amp;gt;&amp;nbsp;EnrolledStudents&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Subject(name: string)&lt;br&gt;+Enroll(student: Student)&lt;br&gt;+NotifyStudents(message: string)&lt;br&gt;            +Equals(obj: object?): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&lt;span class=&quot;hljs-title&quot;&gt;GetHashCode&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;): int&lt;br&gt;            +ToString(): string&lt;/p&gt;" vertex="1">
-          <mxGeometry height="180" width="190" x="-530" y="100" as="geometry" />
+        <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-16" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;Subject&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-List&amp;lt;Student&amp;gt; _students&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+string Name&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+List&amp;lt;Student&amp;gt;&amp;nbsp;EnrolledStudents&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Subject(name: string)&lt;br&gt;+Enroll(student: Student)&lt;br&gt;+NotifyStudents()&lt;br&gt;            +Equals(obj: object?): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&lt;span class=&quot;hljs-title&quot;&gt;GetHashCode&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;): int&lt;br&gt;            +ToString(): string&lt;/p&gt;" vertex="1">
+          <mxGeometry height="180" width="190" x="-450" y="30" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-19" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=diamondThin;endFill=0;targetPerimeterSpacing=0;endSize=17;" target="OLvOtJGtDJ0Bsc-RMxMk-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-18" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;Student&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-int _id&lt;br&gt;            -string _name&lt;br&gt;            +int Id&lt;br&gt;            +string Name&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Student(id: int, name: string)&lt;br&gt;            +OnExamStarted(message: string)&lt;br&gt;            +Equals(obj: object?): bool&lt;br&gt;+&lt;span class=&quot;hljs-title&quot;&gt;GetHashCode&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;): int&lt;br&gt;            +ToString(): string&lt;/p&gt;" vertex="1">
-          <mxGeometry height="180" width="190" x="-790" y="95" as="geometry" />
+        <mxCell id="_N4kI7smr2jnTIrs4zNd-7" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;dashPattern=8 8;" target="_N4kI7smr2jnTIrs4zNd-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-690" y="340" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-44" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;" target="5d2195bd80daf111-20">
+        <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-18" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;Student&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-int _id&lt;br&gt;            -string _name&lt;br&gt;            +int Id&lt;br&gt;            +string Name&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Student(id: int, name: string)&lt;br&gt;            +OnExamStarted(sender: object,&lt;br&gt;e: ExamEventArgs)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;            +Equals(obj: object?): bool&lt;br&gt;+&lt;span class=&quot;hljs-title&quot;&gt;GetHashCode&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;): int&lt;br&gt;            +ToString(): string&lt;/p&gt;" vertex="1">
+          <mxGeometry height="195" width="190" x="-785" y="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-44" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;" target="5d2195bd80daf111-20">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="258" y="550" />
-              <mxPoint x="258" y="285" />
+              <mxPoint x="258" y="510" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-46" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="OLvOtJGtDJ0Bsc-RMxMk-39">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="520" y="292" />
-              <mxPoint x="395" y="292" />
+              <mxPoint x="682" y="292" />
+              <mxPoint x="557" y="292" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-20" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;lt;abstract&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;Question&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-string _header&lt;br&gt;            -string _body&lt;br&gt;            -int _marks&lt;br&gt;            +string Header&lt;br&gt;            +string Body&lt;br&gt;            +int Marks&lt;br&gt;            +AnswerList Answers&lt;br&gt;            +Answer? CorrectAnswer&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;#Question(header: string, body: string, marks: int,&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;answers: AnswerList, correctAnswer: Answer?)&lt;br&gt;            +Display(): void&lt;br&gt;            +CheckAnswer(studentAnswer: Answer): bool&lt;br&gt;            +ParseStudentInput(input: string): Answer?&lt;br&gt;            +GetCorrectAnswerDisplay(): string&lt;br&gt;            #PrintQuestion(): void&lt;br&gt;            +Equals(obj: object?): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&lt;span class=&quot;hljs-title&quot;&gt;GetHashCode&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;): int&lt;br&gt;            +ToString(): string&lt;/p&gt;" vertex="1">
-          <mxGeometry height="340" width="330" x="425" y="350" as="geometry" />
+          <mxGeometry height="340" width="330" x="587" y="350" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-33" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=block;endFill=0;" target="OLvOtJGtDJ0Bsc-RMxMk-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-25" parent="1" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" value="&lt;b&gt;ChooseOneQuestion    &lt;/b&gt;" vertex="1">
-          <mxGeometry height="120" width="240" x="470" y="770" as="geometry" />
+          <mxGeometry height="120" width="240" x="632" y="770" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-26" parent="OLvOtJGtDJ0Bsc-RMxMk-25" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ChooseOneQuestion(header: string, body: string, marks: int, answers: AnswerList, correctAnswer: Answer)&lt;br/&gt;            +Display(): void&lt;br/&gt;            +CheckAnswer(studentAnswer: Answer): bool" vertex="1">
           <mxGeometry height="94" width="240" y="26" as="geometry" />
@@ -80,7 +100,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-29" parent="1" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" value="&lt;b&gt;TrueFalseQuestion   &lt;/b&gt;" vertex="1">
-          <mxGeometry height="120" width="240" x="210" y="770" as="geometry" />
+          <mxGeometry height="120" width="240" x="372" y="770" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-30" parent="OLvOtJGtDJ0Bsc-RMxMk-29" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+TrueFalseQuestion(header: string, body: string, marks: int, correctAnswer: bool)&lt;br/&gt;            +Display(): void&lt;br/&gt;            +CheckAnswer(studentAnswer: Answer): bool" vertex="1">
           <mxGeometry height="94" width="240" y="26" as="geometry" />
@@ -89,28 +109,45 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-31" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;span style=&quot;font-family: Verdana; font-size: 10px;&quot;&gt;&lt;b&gt;ChooseAllQuestion&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-AnswerList _correctAnswers&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ChooseAllQuestion(header: string, body: string,&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;marks: int, answers: AnswerList, correctAnswers: AnswerList)&lt;br&gt;            +Display(): void&lt;br&gt;            +CheckAnswer(studentAnswer: Answer): bool&lt;br&gt;            +ParseStudentInput(input: string): Answer?&lt;br&gt;            +GetCorrectAnswerDisplay(): string&lt;/p&gt;" vertex="1">
-          <mxGeometry height="170" width="340" x="740" y="770" as="geometry" />
+          <mxGeometry height="170" width="340" x="902" y="770" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-45" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=diamond;startFill=1;startSize=10;" target="OLvOtJGtDJ0Bsc-RMxMk-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-35" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;List&amp;lt;Question&amp;gt;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;QuestionList&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt; -string _logFilePath&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+QuestionList(logFilePath: string)&lt;br&gt;            +Add(question: Question): void&lt;br&gt;            -LogToFile(question: Question): void&lt;/p&gt;" vertex="1">
-          <mxGeometry height="130" width="210" x="1010" y="450" as="geometry" />
+          <mxGeometry height="130" width="210" x="1172" y="453" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-38" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnswerList&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-List&amp;lt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Answer&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;gt; _answers&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;            +int Count&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Answer this[int]&lt;br&gt;            +AnswerList(capacity: int)&lt;br&gt;            +Add(answer: Answer)&lt;br&gt;            +Contains(answer: Answer): bool&lt;br&gt;            +GetById(id: int): Answer?&lt;/p&gt;" vertex="1">
-          <mxGeometry height="180" width="190" x="620" y="50" as="geometry" />
+          <mxGeometry height="180" width="190" x="782" y="50" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-41" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;" target="OLvOtJGtDJ0Bsc-RMxMk-38">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-39" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;IComparable&amp;gt;&lt;br&gt;Answer&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-int _id&lt;br&gt;            -string _text&lt;br&gt;            +int Id&lt;br&gt;            +string Text&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Answer(id: int, text: string)&lt;br&gt;            +Equals(obj: object?): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&lt;span class=&quot;hljs-title&quot;&gt;GetHashCode&lt;/span&gt;(&lt;span class=&quot;hljs-params&quot;&gt;&lt;/span&gt;): int&lt;br&gt;            +CompareTo(other: Answer?): int&lt;br&gt;            +ToString(): string&lt;/p&gt;" vertex="1">
-          <mxGeometry height="190" width="190" x="300" y="45" as="geometry" />
+          <mxGeometry height="190" width="190" x="462" y="45" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-40" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.516;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=1;" target="OLvOtJGtDJ0Bsc-RMxMk-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OLvOtJGtDJ0Bsc-RMxMk-42" edge="1" parent="1" source="OLvOtJGtDJ0Bsc-RMxMk-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.676;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=1;" target="OLvOtJGtDJ0Bsc-RMxMk-31">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_N4kI7smr2jnTIrs4zNd-3" edge="1" parent="1" source="_N4kI7smr2jnTIrs4zNd-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="OLvOtJGtDJ0Bsc-RMxMk-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_N4kI7smr2jnTIrs4zNd-5" edge="1" parent="1" source="_N4kI7smr2jnTIrs4zNd-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="5d2195bd80daf111-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-190" y="340" />
+              <mxPoint x="-190" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_N4kI7smr2jnTIrs4zNd-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;EventArgs&amp;gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;&lt;br&gt;ExamEventArgs&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Subject Subject&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+Exam Exam&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ExamEventArgs(subject: Subject,&lt;br&gt;exam: Exam)&lt;br&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="195" x="-452.5" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="_N4kI7smr2jnTIrs4zNd-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;delegate&amp;gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;ExamStartedHandler&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ExamEventArgs(subject: Subject,&lt;br&gt;exam: Exam)&lt;br&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="195" x="-455" y="463" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
